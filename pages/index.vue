@@ -32,8 +32,8 @@ defineOgImage({
         description: 'text-primary-100 selection:bg-primary-800'
       }"
     >
-      <div v-if="page.hero.screenshot" class="bg-white/10 ring-1 ring-white/20 rounded-2xl lg:-m-4 p-4">
-        <img v-bind="page.hero.screenshot" :src="page.hero.screenshot.src" class="rounded-md shadow">
+      <div v-if="page.hero.screenshot" class="   lg:-m-4 p-4">
+        <img v-bind="page.hero.screenshot" src="/public/1576-removebg-preview.png" class="rounded-md shadow">
       </div>
 
 
