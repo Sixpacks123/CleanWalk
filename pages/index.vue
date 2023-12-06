@@ -36,16 +36,28 @@ defineOgImage({
         <img v-bind="page.hero.screenshot" :src="page.hero.screenshot.src" class="rounded-md shadow">
       </div>
 
-      <ULandingLogos :title="page.logos.title" align="center">
-        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
-      </ULandingLogos>
+
     </ULandingHero>
+    <ULandingSection id="who" :title="page.who.title"  :description="page.who.description">
+      <ULandingCTA
+        :description="page.who.pack.description"
+        align="left"
+        :card="false"
+      >
+        <img
+          src="https://picsum.photos/640/360"
+          class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
+        />
+      </ULandingCTA>
+    </ULandingSection>
 
     <ULandingSection id="features" :title="page.features.title" :description="page.features.description">
       <UPageGrid v-bind="page.pricing.grid">
         <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
       </UPageGrid>
     </ULandingSection>
+
+
 
     <ULandingSection
       id="pricing"
@@ -97,7 +109,7 @@ defineOgImage({
     <ULandingSection class="bg-primary-500">
       <ULandingCTA v-bind="page.cta" />
     </ULandingSection>
-
+<!--
     <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="bg-gray-50">
       <ULandingFAQ
         :items="page.faq.items"
@@ -112,6 +124,6 @@ defineOgImage({
         multiple
         class="max-w-4xl mx-auto"
       />
-    </ULandingSection>
+    </ULandingSection>-->
   </div>
 </template>

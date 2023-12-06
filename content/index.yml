@@ -1,23 +1,17 @@
-title: Nuxt UI Pro - Landing template
+title: CleanWalk
 description: Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
-  title: Build your app in seconds
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  title: Découvrez la nouvelle dimension des cleanwalk !
+  description: Nous simplifions et organisons vos initiatives de nettoyage avec des Clean Walk dignes des plus grands événements culturels !
   screenshot:
     src: https://volta.net/home/screenshot.png
     alt: App screenshot
     width: 1216
     height: 684
   links:
-    - label: Get started
+    - label: Explorez notre méthode
       to: '#features'
       size: xl
-    - label: Documentation
-      size: xl
-      color: primary
-      variant: soft
-      to: https://ui.nuxt.com/pro
-      target: _blank
 logos:
   title: Trusted by the world's best
   icons:
@@ -27,75 +21,94 @@ logos:
     - i-simple-icons-vercel
     - i-simple-icons-cloudflare
 features:
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: Pourquoi utiliser notre service ?
+  description: Chez CleanWalks, nous transformons les initiatives de nettoyage en expériences mémorables et impactantes. Notre service offre
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+    - title: Facilité et efficacité
+      description: Nous prenons en charge tous les aspects logistiques et opérationnels, vous permettant de vous concentrer sur l'impact de votre action.
       icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+
+    - title: Technologie de pointe
+      description: Notre application innovante enrichit votre expérience et celle de vos participants, rendant chaque Clean Walk à la fois ludique et productive.
       icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+
+    - title: Rapidité d'exécution
+      description: Une organisation rapide et efficace pour des événements mis en place en un temps record.
       icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+
+    - title: Accessibilité
+      description: Des solutions abordables pour permettre à toutes les organisations de participer.
       icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+
+    - title: Scalabilité
+      description: Des événements adaptés à toutes les tailles, de petits groupes locaux aux grandes entreprises.
       icon: i-heroicons-chart-bar
+
+    - title: Impact mesurable
+      description: Suivez l'impact réel de vos actions grâce à des données environnementales précises.
+      icon: i-heroicons-adjustments
+
+    - title: Visibilité accrue
+      description: Augmentez votre présence et votre impact social à travers des campagnes médiatiques ciblées.
+      icon: i-heroicons-eye
+
+    - title: Collaboration communautaire
+      description: Renforcez les liens avec la communauté locale et créez des partenariats significatifs.
+      icon: i-heroicons-hand
+
+    - title: Engagement durable
+      description: Contribuez à un changement positif à long terme pour l'environnement et la société.
+      icon: i-heroicons-globe-alt
+who:
+  title: Qui sommes-nous ?
+  description: CleanWalks propose une solution intégrale pour faciliter l'organisation de cleanwalks
+  pack:
+    title:
+    description: CleanWalks propose une solution intégrale pour faciliter l'organisation d'événements écologiques, en l'occurrence des CleanWalks, en mettant à disposition des associations, collectivités locales et entreprises des packages personnalisés. Ces packages incluent tous les aspects nécessaires à la réalisation d'une CleanWalk réussie, allant des équipements logistiques à la nourriture, et même à l'expertise
+
 pricing:
-  title: A plan for every need
-  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
+  title: Nos Packs
+  description: Découvrez nos packages personnalisés, allant des équipements matériels à logistiques, conçus pour garantir le succès de votre Clean Walk. De la nourriture aux bases de camp, nous avons tout prévu ! .
   plans:
     - title: Basic
-      description: A basic plan for individuals.
-      price: $9.99
+      description: Idéal pour les petits groupes ou les initiatives locales. Parfait pour démarrer votre première Clean Walk.
       align: top
       button:
-        label: Get Started
+        label: Choisissez Basic
       features:
-        - 1 GB Storage
-        - 1 Email Account
-        - 1 Domain
-        - 1 Website
-        - 1 Database
-        - 1 SSL Certificate
-        - 1 Support Ticket
+        - Matériel de nettoyage de base
+        - Guide de sécurité
+        - Application mobile avec suivi GPS
+        - Support en ligne
+
     - title: Standard
-      description: A standard plan for small teams.
-      price: $19.99
+      description: Adapté aux organisations moyennes, pour un impact plus large et votre RSE.
       highlight: true
       align: top
       button:
-        label: Get Started
+        label: Optez pour Standard
         color: primary
       features:
-        - 10 GB Storage
-        - 10 Email Accounts
-        - 10 Domains
-        - 10 Websites
-        - 10 Databases
-        - 10 SSL Certificates
-        - 10 Support Tickets
+        - Matériel de nettoyage avancé
+        - Kits de sécurité complets
+        - Application avec analytics et partage social
+        - Coordination logistique locale
+        - Support en ligne et téléphonique
+
     - title: Premium
-      description: A premium plan for large teams.
-      price: $29.99
+      description: La solution complète pour les grandes entreprises et les événements de grande ampleur.
       align: top
       button:
-        label: Get Started
+        label: Sélectionnez Premium
       features:
-        - 100 GB Storage
-        - 100 Email Accounts
-        - 100 Domains
-        - 100 Websites
-        - 100 Databases
-        - 100 SSL Certificates
-        - 100 Support Tickets
+        - Equipement de nettoyage professionnel
+        - Sécurité et premiers secours sur site
+        - Application avec fonctionnalités étendues
+        - Gestion complète de l'événement
+        - Campagnes de sensibilisation personnalisées
+        - Rapports d'impact détaillés
+        - Support prioritaire
+
 testimonials:
   headline: Testimonials
   title: What our customers are saying.
