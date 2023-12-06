@@ -1,12 +1,12 @@
 export default defineAppConfig({
   ui: {
-    primary: 'green',
+    primary: 'sky',
     gray: 'zinc',
     button: {
       rounded: 'rounded-full',
       default: {
         size: 'md',
-        color: 'black'
+        color: 'lime'
       }
     },
     input: {

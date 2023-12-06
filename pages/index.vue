@@ -124,21 +124,7 @@ defineOgImage({
       </UPageColumns>
     </ULandingSection>
 
-    <ULandingSection class="bg-primary-500">
-      <UFooterColumns :links="links">
 
-        <template #right>
-          <form @submit.prevent="">
-            <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
-              <UInput v-model="" type="email" placeholder="Enter your email" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm">
-                <template #trailing>
-                  <UButton type="submit" size="xs" color="primary" />
-                </template>
-              </UInput>
-            </UFormGroup>
-          </form>
-        </template>
-      </UFooterColumns>    </ULandingSection>
 <!--
     <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="bg-gray-50">
       <ULandingFAQ
