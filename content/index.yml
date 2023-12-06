@@ -1,15 +1,16 @@
 title: CleanWalk
-description: Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+description:  Révolutionnez l'Écologie Urbaine avec Nos CleanWalks !
 hero:
-  title: Découvrez la nouvelle dimension des cleanwalk !
-  description: Nous simplifions et organisons vos initiatives de nettoyage avec des Clean Walk dignes des plus grands événements culturels !
+  title: Révolutionnez l'Écologie Urbaine avec Nos CleanWalks !
+  description: Avec CleanWalk, donnez une nouvelle dimension à vos actions écologiques - nettoyez, inspirez, et impactez.
+
   screenshot:
     src: https://volta.net/home/screenshot.png
     alt: App screenshot
     width: 1216
     height: 684
   links:
-    - label: Explorez notre méthode
+    - label: Décourvrer notre offre
       to: '#features'
       size: xl
 logos:
@@ -22,7 +23,7 @@ logos:
     - i-simple-icons-cloudflare
 features:
   title: Pourquoi utiliser notre service ?
-  description: Chez CleanWalks, nous transformons les initiatives de nettoyage en expériences mémorables et impactantes. Notre service offre
+  description: Expérience simplifiée, technologie avancée, et résultats rapides – CleanWalks, où chaque détail compte.
   items:
     - title: Facilité et efficacité
       description: Nous prenons en charge tous les aspects logistiques et opérationnels, vous permettant de vous concentrer sur l'impact de votre action.
@@ -61,14 +62,15 @@ features:
       icon: i-heroicons-globe-alt
 who:
   title: Qui sommes-nous ?
-  description: CleanWalks propose une solution intégrale pour faciliter l'organisation de cleanwalks
+  description: Chez CleanWalks, nous révolutionnons l'organisation des cleanwalks.
   pack:
     title:
-    description: CleanWalks propose une solution intégrale pour faciliter l'organisation d'événements écologiques, en l'occurrence des CleanWalks, en mettant à disposition des associations, collectivités locales et entreprises des packages personnalisés. Ces packages incluent tous les aspects nécessaires à la réalisation d'une CleanWalk réussie, allant des équipements logistiques à la nourriture, et même à l'expertise
-
+    description: >
+      Nous offrons des solutions complètes pour organiser facilement des événements respectueux de l'environnement. Nos services personnalisés incluent tout le nécessaire pour mener à bien votre événement, des équipements pratiques à la nourriture, sans oublier notre expertise.
+      Notre application mobile innovante enrichit votre expérience. Elle offre un suivi en temps réel via GPS et collecte des données importantes comme l'étendue de votre action et son impact positif sur l'environnement.
 pricing:
   title: Nos Packs
-  description: Découvrez nos packages personnalisés, allant des équipements matériels à logistiques, conçus pour garantir le succès de votre Clean Walk. De la nourriture aux bases de camp, nous avons tout prévu ! .
+  description: rouvez le pack parfait – du matériel essentiel aux solutions complètes, adapté à votre mission.
   plans:
     - title: Basic
       description: Idéal pour les petits groupes ou les initiatives locales. Parfait pour démarrer votre première Clean Walk.

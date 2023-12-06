@@ -15,7 +15,7 @@ const links = [{
   icon: 'i-heroicons-cube-transparent',
   exactHash: true
 }, {
-  label: 'Pricing',
+  label: 'Nos packs',
   to: '#pricing',
   icon: 'i-heroicons-credit-card',
   exactHash: true
@@ -34,7 +34,7 @@ const links = [{
     </template>
 
     <template #right>
-      <UButton label="Contact" color="black" class="hidden lg:flex" />
+      <UButton label="Contact" color="lime" class="hidden lg:flex" />
     </template>
 
     <template #panel>

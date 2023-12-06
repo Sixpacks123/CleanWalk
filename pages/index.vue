@@ -25,15 +25,17 @@ defineOgImage({
 
     <ULandingHero
       :title="page.hero.title"
+      orientation="vertical"
       :description="page.hero.description"
       :links="page.hero.links"
+
       :ui="{
         title: 'text-white selection:bg-primary-800',
         description: 'text-primary-100 selection:bg-primary-800'
       }"
     >
       <div v-if="page.hero.screenshot" class="   lg:-m-4 p-4">
-        <img v-bind="page.hero.screenshot" src="/public/1576-removebg-preview.png" class="rounded-md shadow">
+        <img v-bind="page.hero.screenshot" src="/public/1576-removebg-preview.png" >
       </div>
 
 
@@ -49,6 +51,22 @@ defineOgImage({
           class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
         />
       </ULandingCTA>
+    </ULandingSection>
+    <ULandingSection id="app">
+        <ULandingCTA
+          title="L'Application CleanWalks : Innovation au Service de l'Environnement"
+          description="Interagissez, suivez, et partagez avec notre app – chaque cleanwalk devient une expérience enrichissante"
+          :card="true"
+          :links="[
+        { label: 'Découvrez dès maintenant', color: 'primary', size: 'lg' }
+      ]"
+        >
+          <img
+            src="https://your-image-source.com/app-screenshot.jpg"
+            class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
+            alt="Aperçu de l'application CleanWalks"
+          />
+        </ULandingCTA>
     </ULandingSection>
 
     <ULandingSection id="features" :title="page.features.title" :description="page.features.description">
@@ -107,8 +125,20 @@ defineOgImage({
     </ULandingSection>
 
     <ULandingSection class="bg-primary-500">
-      <ULandingCTA v-bind="page.cta" />
-    </ULandingSection>
+      <UFooterColumns :links="links">
+
+        <template #right>
+          <form @submit.prevent="">
+            <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
+              <UInput v-model="" type="email" placeholder="Enter your email" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm">
+                <template #trailing>
+                  <UButton type="submit" size="xs" color="primary" />
+                </template>
+              </UInput>
+            </UFormGroup>
+          </form>
+        </template>
+      </UFooterColumns>    </ULandingSection>
 <!--
     <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="bg-gray-50">
       <ULandingFAQ
