@@ -28,14 +28,14 @@ logos:
     - i-simple-icons-cloudflare
 features:
   title: Pourquoi utiliser notre service ?
-  description: Expérience simplifiée, technologie avancée, et résultats rapides – CleanWalks, où chaque détail compte.
+  description: Expérience simplifiée, technologie avancée, et résultats rapides – CleanWalk, où chaque détail compte.
   items:
     - title: Facilité et efficacité
       description: Nous prenons en charge tous les aspects logistiques et opérationnels, vous permettant de vous concentrer sur l'impact de votre action.
       icon: i-heroicons-cog
 
     - title: Technologie de pointe
-      description: Notre application innovante enrichit votre expérience et celle de vos participants, rendant chaque Clean Walk à la fois ludique, productive et mesurable.
+      description: Notre application innovante enrichit votre expérience et celle de vos participants, rendant chaque CleanWalk à la fois ludique, productive et mesurable.
       icon: i-heroicons-check
 
     - title: Rapidité d'exécution
@@ -44,7 +44,7 @@ features:
 
 who:
   title: Qui sommes-nous ?
-  description: Chez CleanWalks, nous révolutionnons l'organisation des cleanwalks.
+  description: Chez CleanWalk, nous révolutionnons l'organisation des cleanwalk.
   pack:
     title:
     description: >
@@ -55,7 +55,7 @@ pricing:
   description: Trouvez le pack parfait – du matériel essentiel aux solutions complètes, adapté à votre mission.
   plans:
     - title: Basic
-      description: Idéal pour les petits groupes ou les initiatives locales. Parfait pour démarrer votre premier Clean Walk.
+      description: Idéal pour les petits groupes ou les initiatives locales. Parfait pour démarrer votre premier CleanWalk.
       align: top
       button:
         label: Choisissez Basic
