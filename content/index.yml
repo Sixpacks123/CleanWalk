@@ -12,6 +12,11 @@ hero:
   links:
     - label: Décourvrer notre offre
       to: '#features'
+      color: 'blue'
+      size: xl
+    - label: Demander un devis
+      to: '#devis'
+      color: 'white'
       size: xl
 logos:
   title: Trusted by the world's best
@@ -30,36 +35,13 @@ features:
       icon: i-heroicons-cog
 
     - title: Technologie de pointe
-      description: Notre application innovante enrichit votre expérience et celle de vos participants, rendant chaque Clean Walk à la fois ludique et productive.
+      description: Notre application innovante enrichit votre expérience et celle de vos participants, rendant chaque Clean Walk à la fois ludique, productive et mesurable.
       icon: i-heroicons-check
 
     - title: Rapidité d'exécution
       description: Une organisation rapide et efficace pour des événements mis en place en un temps record.
       icon: i-heroicons-rocket-launch
 
-    - title: Accessibilité
-      description: Des solutions abordables pour permettre à toutes les organisations de participer.
-      icon: i-heroicons-currency-dollar
-
-    - title: Scalabilité
-      description: Des événements adaptés à toutes les tailles, de petits groupes locaux aux grandes entreprises.
-      icon: i-heroicons-chart-bar
-
-    - title: Impact mesurable
-      description: Suivez l'impact réel de vos actions grâce à des données environnementales précises.
-      icon: i-heroicons-adjustments
-
-    - title: Visibilité accrue
-      description: Augmentez votre présence et votre impact social à travers des campagnes médiatiques ciblées.
-      icon: i-heroicons-eye
-
-    - title: Collaboration communautaire
-      description: Renforcez les liens avec la communauté locale et créez des partenariats significatifs.
-      icon: i-heroicons-hand
-
-    - title: Engagement durable
-      description: Contribuez à un changement positif à long terme pour l'environnement et la société.
-      icon: i-heroicons-globe-alt
 who:
   title: Qui sommes-nous ?
   description: Chez CleanWalks, nous révolutionnons l'organisation des cleanwalks.
@@ -70,10 +52,10 @@ who:
       Notre application mobile innovante enrichit votre expérience. Elle offre un suivi en temps réel via GPS et collecte des données importantes comme l'étendue de votre action et son impact positif sur l'environnement.
 pricing:
   title: Nos Packs
-  description: rouvez le pack parfait – du matériel essentiel aux solutions complètes, adapté à votre mission.
+  description: Trouvez le pack parfait – du matériel essentiel aux solutions complètes, adapté à votre mission.
   plans:
     - title: Basic
-      description: Idéal pour les petits groupes ou les initiatives locales. Parfait pour démarrer votre première Clean Walk.
+      description: Idéal pour les petits groupes ou les initiatives locales. Parfait pour démarrer votre premier Clean Walk.
       align: top
       button:
         label: Choisissez Basic
@@ -84,7 +66,7 @@ pricing:
         - Support en ligne
 
     - title: Standard
-      description: Adapté aux organisations moyennes, pour un impact plus large et votre RSE.
+      description: Adapté aux organisations moyennes, pour un impact plus large et pour developper votre RSE.
       highlight: true
       align: top
       button:
@@ -166,3 +148,31 @@ faq:
       content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
     - label: Do you offer support?
       content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+events:
+  title: Dernier Events
+  description: Clean Walk Rennes 2023
+devis:
+  title: Demandez un Devis
+  description: Obtenez une estimation personnalisée pour votre projet CleanWalk.
+  form:
+    fields:
+      - name: Nom
+        type: text
+        placeholder: Votre nom
+      - name: Email
+        type: email
+        placeholder: Votre adresse email
+      - name: Type d'événement
+        type: select
+        options:
+          - Petit groupe/local
+          - Organisation moyenne
+          - Grande entreprise
+      - name: Date prévue
+        type: date
+      - name: Commentaires
+        type: textarea
+        placeholder: Détails supplémentaires (optionnel)
+  submitButton:
+    label: Soumettre la Demande
+    color: primary

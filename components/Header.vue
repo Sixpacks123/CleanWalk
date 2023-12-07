@@ -20,8 +20,8 @@ const links = [{
   icon: 'i-heroicons-credit-card',
   exactHash: true
 }, {
-  label: 'Témoignages',
-  to: '#testimonials',
+  label: 'Devis',
+  to: '#devis',
   icon: 'i-heroicons-academic-cap',
   exactHash: true
 }]
@@ -34,7 +34,7 @@ const links = [{
     </template>
 
     <template #right>
-      <UButton label="Contact" color="lime" class="hidden lg:flex" />
+      <UButton label="Contact" color="blue" class="hidden lg:flex" />
     </template>
 
     <template #panel>

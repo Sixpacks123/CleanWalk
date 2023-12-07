@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { FormError, FormSubmitEvent } from '#ui/types'
+
 definePageMeta({
   colorMode: 'light'
 })
@@ -17,6 +19,30 @@ defineOgImage({
   title: page.value.title,
   description: page.value.description
 })
+const types = ['Cleanwalk', 'Festivals', 'Evenements de quartier','autres']
+
+
+const state = reactive({
+  organizationName: '',
+  eventType: '',
+  groupSize: 1,
+  contactEmail: '',
+  additionalInfo: ''
+})
+
+const validate = (state: any): FormError[] => {
+  const errors = []
+  if (!state.organizationName) errors.push({ path: 'organizationName', message: 'Organization name is required' })
+  if (!state.eventType) errors.push({ path: 'eventType', message: 'Event type is required' })
+  if (!state.groupSize) errors.push({ path: 'groupSize', message: 'Group size is required' })
+  if (!state.contactEmail) errors.push({ path: 'contactEmail', message: 'Contact email is required' })
+  return errors
+}
+
+async function onSubmit (event: FormSubmitEvent<any>) {
+  // Logique pour traiter les données du devis
+  console.log(event.data)
+}
 </script>
 
 <template>
@@ -34,8 +60,8 @@ defineOgImage({
         description: 'text-primary-100 selection:bg-primary-800'
       }"
     >
-      <div v-if="page.hero.screenshot" class="   lg:-m-4 p-4">
-        <img v-bind="page.hero.screenshot" src="/public/1576-removebg-preview.png" >
+      <div v-if="page.hero.screenshot" class=" w-full justify-center items-center lg:-m-4 p-4">
+        <img v-bind="page.hero.screenshot" class=" mx-auto w-1/2 h-1/2 " src="/public/Front3.png" >
       </div>
 
 
@@ -51,14 +77,14 @@ defineOgImage({
           class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
         />
       </ULandingCTA>
-    </ULandingSection>
-    <ULandingSection id="app">
         <ULandingCTA
+          id="app"
           title="L'Application CleanWalks : Innovation au Service de l'Environnement"
           description="Interagissez, suivez, et partagez avec notre app – chaque cleanwalk devient une expérience enrichissante"
-          :card="true"
+          align="right"
+          :card="false"
           :links="[
-        { label: 'Découvrez dès maintenant', color: 'primary', size: 'lg' }
+        { label: 'Découvrez dès maintenant', color: 'blue', size: 'lg' }
       ]"
         >
           <img
@@ -92,6 +118,49 @@ defineOgImage({
       </UPricingGrid>
     </ULandingSection>
 
+
+    <ULandingSection id="devis" :title="page.devis.title" :description="page.devis.description">
+      <div class="flex flex-row justify-between items-stretch gap-4 flex-wrap">
+        <div class="flex-1">
+          <img
+            src="https://www.ac-bordeaux.fr/sites/ac_bordeaux/files/2022-09/chapo-cleanwalk-png-42298.png"
+            class="h-full w-full object-cover rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
+          />
+        </div>
+
+        <div class="flex-1">
+          <UForm :validate="validate" :state="state" class="space-y-4 h-full" @submit="onSubmit">
+            <UFormGroup label="Nom de l'Organisation" name="nomOrganisation">
+              <UInput v-model="state.nomOrganisation" />
+            </UFormGroup>
+
+            <UFormGroup label="Type d'Événement" name="typeEvenement">
+              <USelect v-model="type" :options="types" />
+            </UFormGroup>
+            <UFormGroup label="Taille du Groupe" name="tailleGroupe">
+              <div class="flex space-x-2 content-baseline">
+                <URange v-model="state.groupSize" name="range" />
+                <span>{{state.groupSize}}</span>
+              </div>
+            </UFormGroup>
+
+            <UFormGroup label="Email de Contact" name="emailContact">
+              <UInput v-model="state.emailContact" type="email" />
+            </UFormGroup>
+
+            <UFormGroup label="Informations Supplémentaires" name="infosSupplementaires">
+              <UTextarea v-model="state.infosSupplementaires" />
+            </UFormGroup>
+
+            <UButton type="submit">
+              Demander un Devis
+            </UButton>
+          </UForm>
+        </div>
+      </div>
+    </ULandingSection>
+
+    <!--
     <ULandingSection id="testimonials" class="bg-gray-50" :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
       <UPageColumns>
         <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
@@ -123,7 +192,7 @@ defineOgImage({
         </div>
       </UPageColumns>
     </ULandingSection>
-
+-->
 
 <!--
     <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="bg-gray-50">

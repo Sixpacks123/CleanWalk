@@ -1,17 +1,15 @@
 export default defineAppConfig({
   ui: {
-    primary: 'sky',
+    primary: 'orange',
     gray: 'zinc',
     button: {
       rounded: 'rounded-full',
       default: {
         size: 'md',
-        color: 'lime'
+        color: 'blue'
       }
     },
-    input: {
-      rounded: 'rounded-full'
-    },
+
     header: {
       wrapper: 'lg:border-b-0 lg:top-4 lg:mb-8 backdrop-blur-none bg-transparent lg:mx-4',
       container: 'lg:rounded-full bg-white lg:shadow'

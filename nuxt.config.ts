@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
+  ssr:true,
   gtag: {
     id: 'G-EVHWC0Y3CD'
   },

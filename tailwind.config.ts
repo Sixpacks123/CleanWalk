@@ -6,6 +6,11 @@ export default <Partial<Config>>{
     extend: {
       fontFamily: {
         sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans]
+      },
+      color: {
+        bleuEsteban: {
+          50:'#004E89'
+        }
       }
     }
   }
