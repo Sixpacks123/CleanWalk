@@ -10,7 +10,7 @@ hero:
     width: 1216
     height: 684
   links:
-    - label: Décourvrer notre offre
+    - label: Décourvrez notre offre
       to: '#features'
       color: 'blue'
       size: xl
