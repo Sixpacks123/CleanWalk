@@ -7,9 +7,13 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     'nuxt-og-image',
+    'nuxt-gtag',
   ],
   ui: {
     icons: ['heroicons', 'simple-icons']
+  },
+  gtag: {
+    id: 'G-EVHWC0Y3CD'
   },
   // Fonts
   fontMetrics: {
