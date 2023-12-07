@@ -1,7 +1,7 @@
 title: CleanWalk
 description:  Révolutionnez l'Écologie Urbaine avec Nos CleanWalk !
 hero:
-  title: Révolutionnez l'Écologie Urbaine avec Nos CleanWalk !
+  title: La solution de ramassage urbain clé en main !
   description: Avec CleanWalk, donnez une nouvelle dimension à vos actions écologiques - nettoyez, inspirez, et impactez.
 
   screenshot:
@@ -10,13 +10,9 @@ hero:
     width: 1216
     height: 684
   links:
-    - label: Décourvrez notre offre
-      to: '#features'
-      color: 'blue'
-      size: xl
-    - label: Demander un devis
+    - label: Faire appel à nous
       to: '#devis'
-      color: 'white'
+      color: 'blue'
       size: xl
 logos:
   title: Trusted by the world's best
@@ -34,7 +30,7 @@ features:
       description: Nous prenons en charge tous les aspects logistiques et opérationnels, vous permettant de vous concentrer sur l'impact de votre action.
       icon: i-heroicons-cog
 
-    - title: Technologie de pointe
+    - title: Notre applications
       description: Notre application innovante enrichit votre expérience et celle de vos participants, rendant chaque CleanWalk à la fois ludique, productive et mesurable.
       icon: i-heroicons-check
 
@@ -43,7 +39,7 @@ features:
       icon: i-heroicons-rocket-launch
 
 who:
-  title: Qui sommes-nous ?
+  title: Nos solutions
   description: Chez CleanWalk, nous révolutionnons l'organisation des cleanwalk.
   pack:
     title:

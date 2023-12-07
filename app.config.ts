@@ -6,10 +6,9 @@ export default defineAppConfig({
       rounded: 'rounded-full',
       default: {
         size: 'md',
-        color: 'blue'
+        color: 'bleuEsteban'
       }
     },
-
     header: {
       wrapper: 'lg:border-b-0 lg:top-4 lg:mb-8 backdrop-blur-none bg-transparent lg:mx-4',
       container: 'lg:rounded-full bg-white lg:shadow'

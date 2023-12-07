@@ -8,9 +8,7 @@ export default <Partial<Config>>{
         sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans]
       },
       color: {
-        bleuEsteban: {
-          50:'#004E89'
-        }
+        'bleuEsteban': '#004E89'
       }
     }
   }

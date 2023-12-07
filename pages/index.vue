@@ -47,7 +47,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
 
 <template>
   <div>
-    <div class="bg-primary-500 absolute top-0 h-[625px] sm:h-[755px] lg:h-[895px] inset-x-0" />
+    <div class="bg-gradient-to-r from-[#004E89] via-orange-400 to-[#FCA311] absolute top-0 h-[625px] sm:h-[755px] lg:h-[795px] inset-x-0" />
 
     <ULandingHero
       :title="page.hero.title"
@@ -60,8 +60,8 @@ async function onSubmit (event: FormSubmitEvent<any>) {
         description: 'text-primary-100 selection:bg-primary-800'
       }"
     >
-      <div v-if="page.hero.screenshot" class=" w-full justify-center items-center lg:-m-4 p-4">
-        <img v-bind="page.hero.screenshot" class=" mx-auto w-1/2 h-1/2 " src="/public/Front3.png" >
+      <div v-if="page.hero.screenshot" class=" w-full lg:-mt-30 ">
+        <img v-bind="page.hero.screenshot" class="w-1/2 w-1/2 mx-auto" src="/public/mockups.png" >
       </div>
 
 
@@ -73,13 +73,15 @@ async function onSubmit (event: FormSubmitEvent<any>) {
         :card="false"
       >
         <img
-          src="https://picsum.photos/640/360"
+          src="/public/Groupe-de-CleanWalk.jpg"
           class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
         />
       </ULandingCTA>
+    </ULandingSection>
+      <ULandingSection>
         <ULandingCTA
           id="app"
-          title="L'Application CleanWalks : Innovation au Service de l'Environnement"
+          title="L'Application CleanWalk : Innovation au Service de l'Environnement"
           description="Interagissez, suivez, et partagez avec notre app – chaque cleanwalk devient une expérience enrichissante"
           align="right"
           :card="false"
@@ -120,7 +122,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
 
 
     <ULandingSection id="devis" :title="page.devis.title" :description="page.devis.description">
-      <div class="flex flex-row justify-between items-stretch gap-4 flex-wrap">
+      <div class="flex flex-row justify-between items-stretch gap-4 flex-wrap ">
         <div class="flex-1">
           <img
             src="https://www.ac-bordeaux.fr/sites/ac_bordeaux/files/2022-09/chapo-cleanwalk-png-42298.png"
@@ -139,7 +141,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
             </UFormGroup>
             <UFormGroup label="Taille du Groupe" name="tailleGroupe">
               <div class="flex space-x-2 content-baseline">
-                <URange v-model="state.groupSize" name="range" />
+                <URange v-model="state.groupSize" name="range" :max="250"/>
                 <span>{{state.groupSize}}</span>
               </div>
             </UFormGroup>
@@ -212,3 +214,14 @@ async function onSubmit (event: FormSubmitEvent<any>) {
     </ULandingSection>-->
   </div>
 </template>
+<style scoped>
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px; /* Augmenter la hauteur pour une courbe plus large */
+  background: white;
+  clip-path: ellipse(100% 50% at 50% 100%);
+}
+
+</style>
