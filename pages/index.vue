@@ -82,7 +82,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
       <ULandingSection>
         <ULandingCTA
           id="app"
-          title="L'Application CleanWalk : innovation au service de l'environnement"
+          title="L'application CleanWalk : innovation au service de l'environnement"
           description="Interagissez, suivez, et partagez avec notre app – chaque cleanwalk devient une expérience enrichissante"
           align="right"
           :card="false"
