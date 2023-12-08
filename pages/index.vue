@@ -158,7 +158,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
             </UFormGroup>
 
             <UButton type="submit">
-              Demander un Devis
+              Demander un devis
             </UButton>
           </UForm>
         </div>
