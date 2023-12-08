@@ -34,7 +34,7 @@ const links = [{
     </template>
 
     <template #right>
-      <UButton label="Contact" color="lime" class="hidden lg:flex" />
+      <UButton label="Contact" color="lime" to='#devis' class="hidden lg:flex" />
     </template>
 
     <template #panel>
