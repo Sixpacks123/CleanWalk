@@ -47,7 +47,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
 
 <template>
   <div>
-    <div class="bg-gradient-to-r from-[#004E89] via-orange-400 to-[#FCA311] absolute top-0 h-[625px] sm:h-[755px] lg:h-[795px] inset-x-0" />
+    <div class="bg-gradient-to-r from-[#004E89] to-lime-500 absolute top-0 h-[625px] sm:h-[755px] lg:h-[795px] inset-x-0" />
 
     <ULandingHero
       :title="page.hero.title"
@@ -70,6 +70,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
       <ULandingCTA
         :description="page.who.pack.description"
         align="left"
+
         :card="false"
       >
         <img
@@ -86,12 +87,12 @@ async function onSubmit (event: FormSubmitEvent<any>) {
           align="right"
           :card="false"
           :links="[
-        { label: 'Découvrez dès maintenant', color: 'blue', size: 'lg' }
+        { label: 'Découvrez dès maintenant', color: 'lime', size: 'lg' }
       ]"
         >
           <img
-            src="https://your-image-source.com/app-screenshot.jpg"
-            class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
+            src="/public/mockups2.png"
+            class="w-full"
             alt="Aperçu de l'application CleanWalks"
           />
         </ULandingCTA>

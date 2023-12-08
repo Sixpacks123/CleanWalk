@@ -12,7 +12,7 @@ hero:
   links:
     - label: Faire appel à nous
       to: '#devis'
-      color: 'blue'
+      color: 'lime'
       size: xl
 logos:
   title: Trusted by the world's best
@@ -56,10 +56,12 @@ pricing:
       button:
         label: Choisissez Basic
       features:
-        - Matériel de nettoyage de base
-        - Guide de sécurité
+        - Matériel de nettoyage de base (gants, sac poubelles)
         - Application mobile avec suivi GPS
+        - Guide de sécurité
         - Support en ligne
+        - Tee shirt clean walk
+        - Conseillé pour moins de 50 personnes
 
     - title: Standard
       description: Adapté aux organisations moyennes, pour un impact plus large et pour developper votre RSE.
@@ -69,11 +71,11 @@ pricing:
         label: Optez pour Standard
         color: primary
       features:
-        - Matériel de nettoyage avancé
-        - Kits de sécurité complets
-        - Application avec analytics et partage social
-        - Coordination logistique locale
-        - Support en ligne et téléphonique
+        - Totalité de l’offre basique
+        - Matériel de nettoyage avancé (pinces à déchets, gants, sacs)
+        - Tube en plexiglass de mégots
+        - Kit de sécurité complet
+        - Conseillé entre 50 et 250 personnes
 
     - title: Premium
       description: La solution complète pour les grandes entreprises et les événements de grande ampleur.
@@ -81,13 +83,13 @@ pricing:
       button:
         label: Sélectionnez Premium
       features:
-        - Equipement de nettoyage professionnel
-        - Sécurité et premiers secours sur site
-        - Application avec fonctionnalités étendues
-        - Gestion complète de l'événement
-        - Campagnes de sensibilisation personnalisées
-        - Rapports d'impact détaillés
+        - Totalité de l’offre standard
+        - Application avec fonctionnalités étendue
+        - Rapport d’impact détaillé
         - Support prioritaire
+        - Gestion complète de l'événement
+        - Présence pour encadrer la journée
+        - Conseillé pour plus de 250 personnes
 
 testimonials:
   headline: Testimonials
