@@ -87,7 +87,9 @@ async function onSubmit (event: FormSubmitEvent<any>) {
           align="right"
           :card="false"
           :links="[
-        { label: 'Découvrez dès maintenant', color: 'lime', size: 'lg' }
+        { label: 'Découvrez dès maintenant', color: 'lime', size: 'lg',
+         to:'https://www.figma.com/proto/TlKRQx5E5ET1N3uTfzqnJK/CleanWalk?type=design&node-id=685-5255&t=PwYk2R4DiWQ2oCXd-1&scaling=scale-down&page-id=101%3A306&starting-point-node-id=685%3A5276&show-proto-sidebar=1&mode=design'
+         }
       ]"
         >
           <img
