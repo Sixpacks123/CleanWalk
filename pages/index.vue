@@ -144,7 +144,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
             </UFormGroup>
             <UFormGroup label="Taille du Groupe" name="tailleGroupe">
               <div class="flex space-x-2 content-baseline">
-                <URange v-model="state.groupSize" name="range" :max="250"/>
+                <URange v-model="state.groupSize" name="range" :max="500"/>
                 <span>{{state.groupSize}}</span>
               </div>
             </UFormGroup>
