@@ -151,7 +151,7 @@ events:
   title: Dernier Events
   description: Clean Walk Rennes 2023
 devis:
-  title: Demandez un Devis
+  title: Demandez un devis
   description: Obtenez une estimation personnalisée pour votre projet CleanWalk.
   form:
     fields:
@@ -173,5 +173,5 @@ devis:
         type: textarea
         placeholder: Détails supplémentaires (optionnel)
   submitButton:
-    label: Soumettre la Demande
+    label: Soumettre la demande
     color: primary
