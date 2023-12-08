@@ -61,7 +61,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
       }"
     >
       <div v-if="page.hero.screenshot" class=" w-full lg:-mt-30 ">
-        <img v-bind="page.hero.screenshot" class="w-1/2 w-1/2 mx-auto" src="/public/mockups.png" >
+        <img v-bind="page.hero.screenshot" class="w-1/2 w-1/2 mx-auto" src="/public/Tel1.png" >
       </div>
 
 
@@ -93,7 +93,7 @@ async function onSubmit (event: FormSubmitEvent<any>) {
       ]"
         >
           <img
-            src="/public/mockups2.png"
+            src="/public/Tel2.png"
             class="w-full"
             alt="Aperçu de l'application CleanWalks"
           />
